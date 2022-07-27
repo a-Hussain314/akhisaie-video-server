@@ -70,6 +70,6 @@ app.post("/validate-meeting/:meetingId", (req, res) => {
 });
 
 //
-app.listen(PORT, () => {
+app.listen(app.listen(process.env.PORT || PORT), () => {
   console.log(`API server listening at http://localhost:${PORT}`);
 });
